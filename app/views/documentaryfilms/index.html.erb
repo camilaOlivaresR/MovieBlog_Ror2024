@@ -1,0 +1,12 @@
+<h1>Documentaryfilms#index</h1>
+
+<h1>Mostrando todos los Documentales</h1>
+
+<% @documentaryfilms.each do |d| %>
+    <h2><%= d.name %></h2>
+    <p><%= d.synopsis %></p>
+    <p><%= d.director %></p>
+<% end%>
+
+<%= link_to "Agregar nuevo Documental", documentaryfilms_new_path %>
+

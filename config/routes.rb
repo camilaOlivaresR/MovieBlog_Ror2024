@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'documentaryfilms/index'
+  get 'documentaryfilms/create'
+  get 'documentaryfilms/new'
+  get 'series/index'
+  get 'series/create'
+  get 'series/new'
   get 'movies/index'
   get 'movies/create'
   get 'movies/new'
@@ -11,4 +17,6 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
    root "movies#index"
    post "movies" => "movies#create"
+   post "series" => "series#create"
+   post "documentaryfilms" => "documentaryfilms#create"
 end
